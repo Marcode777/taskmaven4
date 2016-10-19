@@ -1,4 +1,5 @@
 import React from "react";
+import CreateTodo from "./createtodo";
 import TodosList from "./todoslist";
 
 const todos = [
@@ -24,6 +25,7 @@ export default class App extends React.Component{
     return(
       <div>
         <h1>TASKMAVEN4</h1>
+        <CreateTodo/>
         <TodosList todos={this.state.todos}/>
       </div>
       )
@@ -39,7 +41,7 @@ export default class App extends React.Component{
 // the state in this.state = is todos, without es6 syntax it would be 'todos:todos', however we're using es6 so there's a short-hand syntax, so it's just todos
 // so now we're going to pass our state into our TodosList, so we'll type '<TodosList todos={this.state.todos}/>' which is referring to this.state = {todos}; above, right after the constructor and super, and in turn, that todos represents the todos array in the const above it
 // so now our todoslist.js has our todos list that we're passing in from app.js and that comes in the form of props, so if we were to 'console.log(this.props)' you would see that it will be the todos array, so if we 'console.log(this.props.todos)' it would be that array right there, you can open it up and see the array there
-// so now let's put them into our component here in todoslist.js, below the TodosListHeader Component, so the way we generally do that is we create another <tr></tr> and then inside it do, {this.renderItems()} and then we create that same method up there, and we want to be able to iterate through these items individually
+// so now let's put them into our component here in todoslist.js, below the TodosListHeader Component, so the way we generally do that is we create another <tbody></tbody> and then inside it do, {this.renderItems()} and then we create that same method up there, and we want to be able to iterate through these items individually
 // at this point lodash is needed, so we install it (well, I installed it already from the very beginning), so we can use syntax like underscore _ 
 // so we return _.map() which basically creates a new array out of what we have and it'll allow us to customize it how we want, without mutating it
 // so we do return _.map(this.props.todos, todo=>) again, doing the double arrow => this is es6 syntax, so for each todo item, we're going to return a todoslist item, and whenever we iterate through something in React, we have to give it a key, so since our todos items do not have an id, let's just kind of give them an index number

@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React from "react";
 import TodosListHeader from "./todoslistheader";
+import TodosListItem from "./todoslistitem";
 
 const todos = [
 {
@@ -22,10 +23,10 @@ export default class TodosList extends React.Component{
     return(
       <table>
         <TodosListHeader/>
-        <tr>
+        <tbody>
           {this.renderItems()}
-        </tr>
+        </tbody>
       </table>
-      )
+      );
   }
 }
