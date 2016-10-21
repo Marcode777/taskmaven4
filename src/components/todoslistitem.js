@@ -14,7 +14,7 @@ export default class TodosListItem extends React.Component{
       return(
           <td>
             <button>Save</button>
-            <button>Cancel</button>
+            <button onClick={this.onCancelClick.bind(this)}>Cancel</button>
           </td>
         ); 
     }
@@ -37,6 +37,9 @@ export default class TodosListItem extends React.Component{
   }
   onEditClick(){
     this.setState({isEditing:true});
+  }
+  onCancelClick(){
+    this.setState({isEditing:false});
   }
 }
 
