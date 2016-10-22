@@ -47,5 +47,5 @@ export default class TodosListItem extends React.Component{
 //setting the state to something with the constructor is actually not considered best practice, but for demonstration purposes, we'll set state inside of components
 // but best practice for setting state is to have a top-level component to do all this stuff
 // for renderActionsSection after, the return should be an else statement, however, we're not gonna use else here because since we're already using return, it will automatically return
-
+// since we want to update the array in our app, we can't just do something here in this todoslistitem.js file, it must be done in the app.js file 
 

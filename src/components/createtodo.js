@@ -7,7 +7,7 @@ export default class TodosList extends React.Component{
   render() {
     return(
       <form onSubmit={this.handleCreate.bind(this)}>
-        <input type="text" placeholder="Tasks to do..." ref="createInput"/>
+        <input type="text" placeholder="Tasks to be done..." ref="createInput"/>
         <button>Create</button>
       </form>
       );
