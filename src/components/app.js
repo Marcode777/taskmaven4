@@ -47,4 +47,8 @@ export default class App extends React.Component{
 // so we do return _.map(this.props.todos, todo=>) again, doing the double arrow => this is es6 syntax, so for each todo item, we're going to return a todoslist item, and whenever we iterate through something in React, we have to give it a key, so since our todos items do not have an id, let's just kind of give them an index number
 // when we use for each, or map, there's also an index, that's the second argument here, or rather the second parameter in '(todo, index)', what we can do is just call the index, key index as in key={index} because each key needs to have a separate index and we're going to pass in everything in this todo here as in the (todo, index), we want to pass in the items in the todo, and another way that we can do that is there's something called es6 spreading, which is triple dot ... as in '{...todo}' so in es6 function syntax, '(todo, index) => <TodosListItem key={index} {...todo}/>' is the same thing as writing 'function(todo, index){return <TodosListItem />}', so that is just short-hand for that.
 // and now with the spread here, the triple dot .... as in '{...todo}', is the same thing as passing in 'task={todo.task} isCompleted={todo.isCompleted}', you can notice how {...todo} is so much cleaner. So this is why es6 is highly recommended to be used for that reason, it is just great with React.
+// since we want to update the array in our app, we can't just do something in the todoslistitem.js file, it must be done in the app.js file which is here
+// so our createTask() method is actually going to come in here
+ 
+
 
