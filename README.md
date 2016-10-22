@@ -15,4 +15,4 @@ also had to manually npm install --save-dev the following
 
 the key was react-hot-loader "^3.0.0-beta.5"  this specific version made it work!
 
-LEFT OFF AT 29:33
+LEFT OFF AT 47:33
