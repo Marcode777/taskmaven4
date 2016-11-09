@@ -1,3 +1,7 @@
+to use this app, git checkout tertiary, then webpack-dev-server, it should appear in localhost:8080
+
+
+
 # taskmaven4
 had to manually npm install --save 
     "lodash": "^4.16.3",
