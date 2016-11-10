@@ -1,4 +1,4 @@
-to use this app, git checkout tertiary, then webpack-dev-server, it should appear in localhost:8080
+to use this app, git checkout tertiary (because the full working app is on tertiary branch code), then webpack-dev-server, it should appear in localhost:8080
 
 
 
